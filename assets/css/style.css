@@ -1,0 +1,130 @@
+body {
+    background-color: #fcf2e6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parentContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.leftContainer{
+    width: 75vw;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    /* margin: 2% 2% 2% 0; */
+}
+
+.rightUpperContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin:6% 2% 5%;
+    width: 100%;
+}
+
+.containerC{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;  縱向的 */
+    width: 90%;
+    margin: auto auto 2% auto; /*順時針*/
+}
+
+#colorRange{
+    /* transform: rotate(90deg); */
+    /* -webkit-appearance: slider-vertical; */
+    -webkit-appearnce:none;
+    appearance:none;
+    background:transparent;
+    margin: 0.5% 0 0.5% 2%;
+    width: 25px;
+}
+#colorRange::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background: linear-gradient(to top, rgb(255,0,0), rgb(255,0,255), rgb(0,0,255), rgb(0,255,255), rgb(0,255,0), rgb(255,255,0), rgb(255,0,0));
+    width:15px;
+    cursor: pointer;
+}
+#colorRange::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    margin-left:-5px;
+    width: 25px;
+    height: 10px;
+    background: transparent;
+    border-radius: 0%;
+    border: 1.5px solid #d5b99c;
+}
+/* 真的不懂為什麼thumb的樣式不能用webkit-slider-thumb改大生氣 噢噢可以了是在母colorRange也要appearance:none*/
+
+#jyCanvas {
+    width: 95%;
+    height: 93vh;
+    border: 2px solid #e7e7e7;
+    background-color: white;
+    display: block;
+    margin: 2% 2% auto;
+    /* cursor: crosshair; */
+    /* 十字架 */
+}
+
+#colorPicker { /* colorpicker canvas */
+    width: 80%;
+    height: 25vh;
+    border: 2px solid #e7e7e7;
+    background-color: white;
+    display: block;
+    cursor: cell;
+}
+
+#brushSize{
+    width: 50%;
+    margin: 2%;
+}
+
+#brushSize::-webkit-slider-runnable-track {
+    background: #f3d5b5;
+    cursor: pointer;
+}
+
+#font{
+    width: 25%;
+    margin: 2% 0 2% 2%;
+
+}
+#fontSize{
+    width: 23%;
+    margin: 2% 0 2% 2%;
+}
+
+#menu {
+    width: 100%;
+    /* margin-top: 2%; */
+    align-items: center;
+}
+
+#menu .button{
+    padding: 26px 26px;
+    width: 92px;
+    height:92px;
+    margin: 3%;
+    align-items: center;
+    background-color: #f3d5b5;
+    cursor: pointer;
+    border: none;
+    border-radius: 42%;
+    color: #794c1b;
+}
+
+#menu .button.active { 
+    background-color: #e7bc91;
+    color: #f3d5b5;
+}

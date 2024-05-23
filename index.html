@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <title>jyCanvas</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="parentContainer">
+        <div class="leftContainer">
+            <canvas id="jyCanvas"></canvas>
+        </div>
+        <div class="rightContainer">
+            <div class = "rightUpperContainer">
+                <div class = "containerC">
+                    <canvas id="colorPicker"></canvas>
+                    <input type="range" id="colorRange" style="writing-mode: vertical-lr; direction: rtl" min="0" max="1530" value="1530">
+                </div>
+                <div class = "containerC">
+                    <i class='fa fa-paint-brush fa-1.5x' style="color:#794c1b; margin:2% 2% 0 10%" ></i>
+                    <input type="range" id="brushSize" min="1" max="20" value="5">
+                    <!-- <button id="rainbow" class="button" onclick="changeButtonClass(this)" style="margin:0 0 0 10%"><i class="fas fa-rainbow"></i></button> -->
+                </div>
+                <div class = "containerC">
+                    <i class='fas fa-font fa-1.5x' style="color:#794c1b; margin:2% 2% 0 10%" ></i>
+                    <select id="font">
+                        <option value="serif">Serif</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="cursive">Cursive</option>
+                        <option value="monospace">Monospace</option>
+                        <option value="Arial Black">Arial Black</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="STSong">華文宋體</option>
+                        <option value="Microsoft JhengHei">微軟正黑體</option>
+                        <option value="PMingLiU">新細明體</option>
+                        <option value="DFKai-sb">標楷體</option>
+                    </select>
+                    <select id="fontSize">
+                        <option>20</option>
+                        <option>24</option>
+                        <option>28</option>
+                        <option>32</option>
+                        <option>36</option>
+                        <option>48</option>
+                        <option>72</option>
+                        <option>100</option>
+                    </select>
+                </div>
+            </div>  
+            <div id="menu">
+                <!-- <input type="color" id="colorPicker" value="#000000"> not allowed to use -->
+                <button id="brush" class="button" onclick="changeButtonClass(this)"><i class="fa fa-pen fa-3x"></i></button>
+                <button id="eraser" class="button" onclick="changeButtonClass(this)"><i class="fas fa-eraser fa-3x"></i></button>
+                <button id="text" class="button" onclick="changeButtonClass(this)"><img src = 'assets/img/text.png' style="width: 95%; height:95%;"></img></button>
+                <!-- <button id="line" class="button" onclick="changeButtonClass(this)"><i class="fas fa-minus fa-3x"></i></button> -->
+                <button id="circle" class="button" onclick="changeButtonClass(this)"><i class="fas fa-circle fa-3x"></i></button>
+                <button id="rectangle" class="button" onclick="changeButtonClass(this)"><i class="fas fa-square fa-3x"></i></button>
+                <button id="triangle" class="button" onclick="changeButtonClass(this)"><i class="fas fa-play fa-3x fa-rotate-270"></i></button>
+                <button id="undo" class="button" onclick="changeButtonClass(this)"><i class="fas fa-undo fa-3x"></i></button>
+                <button id="redo" class="button" onclick="changeButtonClass(this)"><i class="fas fa-redo fa-3x"></i></button>
+                <!-- <button id="upload" class="button" onclick="changeButtonClass(this)"><i class="fas fa-upload fa-3x"></i></button> -->
+                <button id="save" class="button" onclick="changeButtonClass(this)"><i class="fas fa-save fa-3x"></i></button>
+                <button id="clear" class="button" onclick="changeButtonClass(this)"><i class="fas fa-trash fa-3x"></i></button>
+                <input type="file" id="imageInput" >
+            </div>
+            
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
