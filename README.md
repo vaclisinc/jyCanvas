@@ -3,7 +3,6 @@
 jyCanvas is an interactive web-based canvas application that allows users to express their creativity through digital drawing. This project was developed as part of the Software Studio 2024 Spring course.
 
 [![jyCanvas demo](https://raw.githubusercontent.com/vaclisinc/jyCanvas/374d19d9804cdb3e28c68334d945144e3f72eae6/demo%20video.gif)](https://www.youtube.com/watch?v=Z0ijTxW7lBY)
-*Click on the GIF to see full demo video*
 
 ## Features
 
@@ -31,6 +30,10 @@ Use the side scroll bar to choose your desired color. The brush icon next to the
 5. Use the undo/redo buttons to correct mistakes
 6. Upload images or add text as needed
 7. When finished, download your artwork
+
+## Demo
+
+For a more high quality walkthrough of jyCanvas features, check out our [YouTube demo video](https://www.youtube.com/watch?v=Z0ijTxW7lBY).
 
 ## Known Issues
 
