@@ -2,7 +2,8 @@
 
 [jyCanvas](https://vacanvas.web.app/) is an interactive web-based canvas application that allows users to express their creativity through digital drawing. This project was developed as part of the Software Studio 2024 Spring course.
 
-[![jyCanvas demo](https://raw.githubusercontent.com/vaclisinc/jyCanvas/374d19d9804cdb3e28c68334d945144e3f72eae6/demo%20video.gif)](https://www.youtube.com/watch?v=Z0ijTxW7lBY)
+>[![jyCanvas demo](https://raw.githubusercontent.com/vaclisinc/jyCanvas/374d19d9804cdb3e28c68334d945144e3f72eae6/demo%20video.gif)](https://www.youtube.com/watch?v=Z0ijTxW7lBY)
+><br>*Click on the gif to view demo video*
 
 ## Features
 
